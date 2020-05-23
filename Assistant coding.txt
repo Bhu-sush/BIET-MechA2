@@ -1,0 +1,776 @@
+{
+  "intents": [
+    {
+      "intent": "yes",
+      "examples": [
+        {
+          "text": "Yes"
+        },
+        {
+          "text": "I want to move home"
+        },
+        {
+          "text": "Ha"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Issueshelter_food",
+      "examples": [
+        {
+          "text": "I don't have any shelter"
+        },
+        {
+          "text": "I can't pay my rent"
+        },
+        {
+          "text": "My land lord force to move from my home as i can't pay my rent"
+        },
+        {
+          "text": "I fill safe back to my home"
+        },
+        {
+          "text": "I am scared"
+        },
+        {
+          "text": "I miss my family"
+        },
+        {
+          "text": "I don;t have money to pay rent or buy food"
+        },
+        {
+          "text": "I can't pay my rent in next month"
+        },
+        {
+          "text": "I can not pay my rent"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "health",
+      "examples": [
+        {
+          "text": "my family member is not well"
+        },
+        {
+          "text": "I have some family issue"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "check",
+      "examples": [
+        {
+          "text": "how to cure covid"
+        },
+        {
+          "text": "how i can stop covid"
+        },
+        {
+          "text": "what is mean by covid"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "How_many_cases_hometown",
+      "examples": [
+        {
+          "text": "Total Cases so Far in my hometown"
+        },
+        {
+          "text": "How many cases of covid 19 have been detected in my bihar?"
+        },
+        {
+          "text": "How many cases of covid 19 have been detected in my UP?"
+        },
+        {
+          "text": "How many cases of covid 19 have been detected in my hometown?"
+        },
+        {
+          "text": "How many cases so far in my Hometown?"
+        },
+        {
+          "text": "How many cases of covid 19 have been detected in my maharashtra?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "greeting",
+      "examples": [
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "hiya"
+        },
+        {
+          "text": "hello watson"
+        },
+        {
+          "text": "hello",
+          "mentions": [
+            {
+              "entity": "hello",
+              "location": [
+                0,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "text": "yo"
+        },
+        {
+          "text": "Good evening"
+        },
+        {
+          "text": "Good afternoon"
+        },
+        {
+          "text": "hey"
+        }
+      ],
+      "description": "hiya"
+    },
+    {
+      "intent": "Thank",
+      "examples": [
+        {
+          "text": "Thank you"
+        },
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "ok thanks"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "way_home",
+      "examples": [
+        {
+          "text": "what should be the reasons i should give to goverment so i can easily travel back home"
+        },
+        {
+          "text": "Online application form to travel in carona"
+        },
+        {
+          "text": "Online application form for to travel"
+        },
+        {
+          "text": "Online application form for covid 19 travel"
+        },
+        {
+          "text": "Online application form released by the state police for COVID-19 related issues"
+        },
+        {
+          "text": "Their is any quarantine stamp i get if travel back my home"
+        },
+        {
+          "text": "How many day i have to quarantine if i go to ny village"
+        },
+        {
+          "text": "Where I can get medical certificates"
+        },
+        {
+          "text": "Forms to get to travel back home"
+        },
+        {
+          "text": "guidelines which one needs to follow to travel back home"
+        },
+        {
+          "text": "Medical certificate which one needs to follow to travel back home"
+        },
+        {
+          "text": "In which area travelling is start"
+        },
+        {
+          "text": "In which area travelling is safe now"
+        },
+        {
+          "text": "Shramik trains and bus services details"
+        },
+        {
+          "text": "Plane tickets"
+        },
+        {
+          "text": "Bus Timetable"
+        },
+        {
+          "text": "train Timetable"
+        },
+        {
+          "text": "What are the plane schedule?"
+        },
+        {
+          "text": "railway map to travel"
+        },
+        {
+          "text": "What are the different train schedule?"
+        },
+        {
+          "text": "How the Migrant labourers can move back to home?"
+        },
+        {
+          "text": "Can I return home states now as I do not have symptoms of coronavirus"
+        },
+        {
+          "text": "Get Back Hometown"
+        },
+        {
+          "text": "get back home"
+        },
+        {
+          "text": "map back to my hometown"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "money",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "money",
+          "synonyms": [
+            "paise",
+            "rupees",
+            "dollar",
+            "dinar",
+            "paisa"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "hello",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "hii",
+          "synonyms": [
+            "ola",
+            "heloo",
+            "hello",
+            "good morning",
+            "good evening",
+            "good afternoon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "hello",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Fear",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "scared",
+          "synonyms": [
+            "scared",
+            "afraid",
+            "fearful",
+            "nervous",
+            "agitated"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "rent",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "rent",
+          "synonyms": [
+            "lease",
+            "landlord",
+            "land",
+            "bhad",
+            "gharmalak"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Health",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "health",
+          "synonyms": [
+            " illness ",
+            "injury",
+            "die",
+            "expire",
+            "fitness"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "no",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "no",
+          "synonyms": [
+            "nai",
+            "mujhe ghar jana hai",
+            "i just want to move back to my hometown",
+            "please just tell me how to go back home"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "govermentbuses",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Bus",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "home",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "railway",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Shramik",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "trains",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Shramik trains",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Timetable",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "plane",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "home",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "area",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hometown",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "back",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "home",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1590239819195",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1590239819231",
+      "previous_sibling": "handler_4_1590239819231"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_2_1590239819195",
+      "event_name": "input",
+      "dialog_node": "handler_4_1590239819231"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "In this case I am happy to help you. As Most of people have one of this issue so after number of my study I want to say that please right now don't move back to hometown or your happyhome instead of that i want to solve your issue by giving you by some other help. So I are you inerested to take some other help form me ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1590232707762",
+      "dialog_node": "response_8_1590239851826",
+      "previous_sibling": "slot_8_1590239852466"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1590232707762",
+      "dialog_node": "slot_8_1590239852466"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1590239852466",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1590239852485",
+      "previous_sibling": "handler_7_1590239852485"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_8_1590239852466",
+      "event_name": "input",
+      "dialog_node": "handler_7_1590239852485"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Why you want to move back?"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "Anything else",
+      "dialog_node": "response_9_1590239818649",
+      "previous_sibling": "slot_2_1590239819195"
+    },
+    {
+      "type": "slot",
+      "parent": "Anything else",
+      "dialog_node": "slot_2_1590239819195"
+    },
+    {
+      "type": "standard",
+      "title": "Covid Info",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This waston assitant is specfically design to solve issue regarding way back to home. But, we are happy to take your any other queires at below link of waston assistant"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#check",
+      "dialog_node": "node_1_1590238871065",
+      "previous_sibling": "node_3_1590232435389"
+    },
+    {
+      "type": "standard",
+      "title": "Health",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok. In this situation please click on below link where i shared the information regarding how to move back in this case."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#health",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_4_1590234424603",
+      "previous_sibling": "node_3_1590234262829"
+    },
+    {
+      "type": "standard",
+      "title": "No",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok.  Then I am happy to give you information regarding the form requriment or any other requriment.  So you have happy journey back to your home. Also I want to give you some other information at the end regarding how you can solve this issue by staying at same place also I am going to give you. Clink on below link in which i covered the link and infromation to safe back to your home."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "This link is regarding- how to solve your above issue by safely  staying at same place? please click on that"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_3_1590234262829"
+      },
+      "conditions": "@no",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1590233685799",
+      "previous_sibling": "node_1_1590232707762"
+    },
+    {
+      "type": "standard",
+      "title": "Thanks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You are welcome. If you have any other queries we are happy to take. We can solve this crsis together.."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Thank",
+      "dialog_node": "node_2_1590239013927",
+      "previous_sibling": "node_1_1590238871065"
+    },
+    {
+      "type": "frame",
+      "title": "Home town",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#way_home",
+      "digress_in": "does_not_return",
+      "dialog_node": "Anything else",
+      "digress_out": "allow_all",
+      "previous_sibling": "Welcome",
+      "digress_out_slots": "allow_all"
+    },
+    {
+      "type": "standard",
+      "title": "Yes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What type of emergency you have can you please give some details so that I can helo you in that"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#yes",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1590232435389",
+      "previous_sibling": "node_4_1590234424603"
+    },
+    {
+      "type": "frame",
+      "title": "Money",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_2_1590233685799"
+      },
+      "conditions": "#Issueshelter_food || @Fear || @rent || @rent",
+      "digress_in": "not_available",
+      "dialog_node": "node_1_1590232707762",
+      "digress_out": "allow_all",
+      "previous_sibling": "Anything else",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "standard",
+      "title": "Any other question",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sorry we don't have information on this can you check other thinks if you planning to move back to your home "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "Anything else"
+      },
+      "conditions": "",
+      "dialog_node": "node_1_1590244355692",
+      "previous_sibling": "node_2_1590239013927"
+    },
+    {
+      "type": "standard",
+      "title": "Yes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I happy you take this step. As our goverment are solving this issue. So below I am going to provide you the link regarding for your differednt isssue. please go throgh it and if you want any other help please contact us on below number"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "This link is regarding- how to solve your above issue by safely  staying at same place? please click on that"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#yes",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1590234262829",
+      "previous_sibling": "node_2_1590233685799"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome to Waston Assistant",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. I am waston Assistant. Here to help you; if you have any questions or queriess regarding your way back to hometown or home. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "welcome || @hello",
+      "digress_in": "does_not_return",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Get Back Home Help",
+  "language": "en",
+  "description": ""
+}
